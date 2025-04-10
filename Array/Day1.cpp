@@ -17,10 +17,12 @@ using namespace std;
 
 int main()
 {
+    // Take a given values
     int arr[]={10,5,10};
     int i,j;
-    int temp;
+    int temp; /*temp helps to swap the values of an array*/
     
+    // I do fist sorting an array
     cout<<"\nElement of Array: ";
     for(i=0;i<3;i++)
     {
@@ -40,6 +42,7 @@ int main()
 
     }    
 
+    // And then print the sorted array
         cout<<"\nElement of Array In Sorted Array: ";
     for(i=0;i<3;i++)
     {

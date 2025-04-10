@@ -14,6 +14,7 @@
 
 
 // APPROACH 1: USING SORTING
+
 #include<iostream>
 using namespace std;
 
@@ -71,4 +72,32 @@ int main()
 cout<<"\nAll element are same -1";
     
 
+}
+
+// APPROACH 2: USING TWO ITERATION
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int arr[]={35,35,35,35,35,35};
+    int i;
+    int largest=-1,second_largest=-1;
+
+    for(i=0;i<6;i++)
+    {
+        if(arr[i]>largest)
+        {
+            largest=arr[i];
+        }
+    }
+
+   for(i=0;i<6;i++)
+   {
+    if(arr[i]>second_largest && arr[i]!=largest)
+    second_largest=arr[i];
+   }
+
+   cout<<second_largest;
 }

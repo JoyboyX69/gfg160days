@@ -46,7 +46,7 @@ int main()
 
     // And then print the sorted array
         cout<<"\nElement of Array In Sorted Array: ";
-    for(i=0;i<5;i++)
+    for(i=0;i<6;i++)
     {
         cout<<"\t"<<arr[i];
     }

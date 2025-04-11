@@ -101,3 +101,30 @@ int main()
 
    cout<<second_largest;
 }
+
+// APPROACH 3: EXPECTED 
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int arr[]={12,35,1,10,1,34};
+    int largest=-1,second_largest=-1;
+
+    for(int i=0;i<6;i++)
+    {
+        if(arr[i]>largest)
+        {second_largest=largest;
+        largest=arr[i];
+        }
+
+        else if
+        (arr[i]<largest && arr[i]>second_largest)
+        second_largest=arr[i];
+    }
+
+    cout<<"Your Second Largest Number is "<<second_largest;
+
+
+}

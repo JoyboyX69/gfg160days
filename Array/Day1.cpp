@@ -1,4 +1,5 @@
 // PROBLEM STATEMENT (DAY 1)
+// FIND THE SECOND LARGEST NUMBER
 // Given an array arr Return the second largest distinct element from an array if the second largest element does not exist then return -1.
 
 // SAMPLE TEST CASE:

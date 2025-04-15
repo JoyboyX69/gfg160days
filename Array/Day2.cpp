@@ -15,3 +15,5 @@ Input: arr[] = [0, 0]
 Output: [0, 0]
 Explanation: No change in array as there are all 0s.
 */
+
+APPROACH 1 : 

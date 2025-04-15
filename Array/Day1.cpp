@@ -82,10 +82,14 @@ using namespace std;
 
 int main()
 {
+    
     int arr[]={35,35,35,35,35,35};
-    int i;
+    int i;  //i for loop
+
+    // Taking a larget and second_largest variable as a integers  
     int largest=-1,second_largest=-1;
 
+    // first step to find a highest value in an array
     for(i=0;i<6;i++)
     {
         if(arr[i]>largest)
@@ -94,12 +98,15 @@ int main()
         }
     }
 
+    /*then check each and every element which is second largest number and compare with largest to check this is 
+    second largest number.*/
    for(i=0;i<6;i++)
    {
     if(arr[i]>second_largest && arr[i]!=largest)
     second_largest=arr[i];
    }
 
+//    print the second largest number.
    cout<<second_largest;
 }
 
@@ -109,10 +116,15 @@ int main()
 using namespace std;
 
 int main()
-{
+{   
+    // taking a array
     int arr[]={12,35,1,10,1,34};
+    // do same step just like 2 approach.
     int largest=-1,second_largest=-1;
 
+    /*In this step we are compare the largest number with an iteration or loop 
+    if array is greater then largest number then largest value store in second largest number
+    & an array will store in largest number & this is continue until loop is complete*/ 
     for(int i=0;i<6;i++)
     {
         if(arr[i]>largest)
@@ -120,11 +132,13 @@ int main()
         largest=arr[i];
         }
 
+        /*otherwise largest is greater then & array is greater than second largest so array will be store in second largest number*/
         else if
         (arr[i]<largest && arr[i]>second_largest)
         second_largest=arr[i];
     }
 
+    // print the value of second largest value
     cout<<"Your Second Largest Number is "<<second_largest;
 
 

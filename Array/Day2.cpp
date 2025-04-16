@@ -55,3 +55,47 @@ int main()
      cout<<"\t"<<arr[i];
     }
 }
+
+/*COMPLEXCITY ANALYSIS
+
+TIME  COMPLEXCITY: O(n).
+SPACE COMPLEXCITY: O(n).*/
+
+
+// APPROACH 2: IN THIS APPROACH WE USE EXTRA VARIABLE AS COUNT.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int arr[]={1, 2, 0, 4, 3, 0, 5, 0};
+    int count=0,i;
+
+    for(i=0;i<8;i++)
+    {
+        if(arr[i]!=0)
+        {
+            arr[count]=arr[i];
+            count++;
+        }
+    }
+
+    while(count<8)
+    {
+        arr[count]=0;
+    }
+
+    for(i=0;i<8;i++)
+    {
+        cout<<"\t"<<arr[i];
+    }
+}
+
+/*COMPLEXITY ANALYSIS:
+TIME  COMPLEXCITY : O(n)
+SPACE COMPLEXCITY : O(1)*/
+
+
+//APPROACH 3: WITH THE HELP OF SWAP VALUE AND TAKE A COUNT VARIABLE.
+

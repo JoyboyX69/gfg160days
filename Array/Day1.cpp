@@ -110,7 +110,7 @@ int main()
    cout<<second_largest;
 }
 
-// APPROACH 3: EXPECTED 
+APPROACH 3: EXPECTED 
 
 #include<iostream>
 using namespace std;

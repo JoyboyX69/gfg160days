@@ -16,4 +16,42 @@ Output: [0, 0]
 Explanation: No change in array as there are all 0s.
 */
 
-APPROACH 1 : 
+// APPROACH 1 : USING A TEMPORARY ARRAY
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int arr[]={1, 2, 0, 4, 3, 0, 5, 0};
+    int temp[8],i,j=0;
+
+    // start a loop to check each an every element
+    for(i=0;i<8;i++)
+    {
+        // this condition only check number except 0
+        if(arr[i]!=0)
+        {
+            // it will help to store a element in an temporary array.
+            temp[j++]=arr[i];
+        }
+    }
+
+    // this condition helps to print 0 in the end.
+    while(j<8)
+    {
+        temp[j++]=0;
+    }
+
+    // this loop helps to store in a real array.
+    for(i=0;i<8;i++)
+    {
+        arr[i]=temp[i];
+    }
+
+    // it helps to print an array.
+    for(i=0;i<8;i++)
+    {
+     cout<<"\t"<<arr[i];
+    }
+}

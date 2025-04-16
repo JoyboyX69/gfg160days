@@ -112,16 +112,25 @@ int main()
     int arr[]={1, 2, 0, 4, 3, 0, 5, 0};
     int i,count=0;
 
+    // this loop check each and every element of an array
     for(i=0;i<8;i++)
     {
+        // this is condition helps to check the non-zero element
         if(arr[i]!=0)
         {
+            // swap the non-zero element of an array and all zeroes are end.
             swap(arr[i],arr[count]);
         }
     }
 
+    // this loop is used to print an array
     for(i=0;i<8;i++)
     {
         cout<<"\t"<<add[i];
     }
 }
+
+/*COMPLEXITY ANALYSIS:
+TIME  COMPLEXCITY : O(n)
+SPACE COMPLEXCITY : O(1)*/
+

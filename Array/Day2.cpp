@@ -72,20 +72,25 @@ int main()
     int arr[]={1, 2, 0, 4, 3, 0, 5, 0};
     int count=0,i;
 
+    // this loop are replace element in the array.
     for(i=0;i<8;i++)
     {
         if(arr[i]!=0)
         {
-            arr[count]=arr[i];
-            count++;
+            // this condition helps to replace the value in the array
+            // and countt will increase
+            arr[count++]=arr[i];
+            
         }
     }
 
+    // this loop works only when the count is less than value of size
     while(count<8)
     {
-        arr[count]=0;
+        arr[count++]=0;
     }
 
+    // this loop only for print the array 
     for(i=0;i<8;i++)
     {
         cout<<"\t"<<arr[i];
@@ -99,3 +104,24 @@ SPACE COMPLEXCITY : O(1)*/
 
 //APPROACH 3: WITH THE HELP OF SWAP VALUE AND TAKE A COUNT VARIABLE.
 
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int arr[]={1, 2, 0, 4, 3, 0, 5, 0};
+    int i,count=0;
+
+    for(i=0;i<8;i++)
+    {
+        if(arr[i]!=0)
+        {
+            swap(arr[i],arr[count]);
+        }
+    }
+
+    for(i=0;i<8;i++)
+    {
+        cout<<"\t"<<add[i];
+    }
+}

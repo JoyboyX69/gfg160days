@@ -126,7 +126,7 @@ int main()
     // this loop is used to print an array
     for(i=0;i<8;i++)
     {
-        cout<<"\t"<<add[i];
+        cout<<"\t"<<arr[i];
     }
 }
 

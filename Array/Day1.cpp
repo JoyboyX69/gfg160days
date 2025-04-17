@@ -75,6 +75,10 @@ cout<<"\nAll element are same -1";
 
 }
 
+/*COMPLEXITY ANALYSIS:
+TIME  COMPLEXCITY : O(n*log(n))
+SPACE COMPLEXCITY : O(1)*/
+
 // APPROACH 2: USING TWO ITERATION
 
 #include<iostream>
@@ -110,6 +114,10 @@ int main()
    cout<<second_largest;
 }
 
+/*COMPLEXITY ANALYSIS:
+TIME  COMPLEXCITY : O(n)
+SPACE COMPLEXCITY : O(1)*/
+
 APPROACH 3: EXPECTED 
 
 #include<iostream>
@@ -143,3 +151,7 @@ int main()
 
 
 }
+
+/*COMPLEXITY ANALYSIS:
+TIME  COMPLEXCITY : O(n)
+SPACE COMPLEXCITY : O(1)*/

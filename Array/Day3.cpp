@@ -19,4 +19,5 @@ using namespace std;
 int main()
 {
     int arr[]={1, 4, 3, 2, 6, 5}
+    int i;
 }
